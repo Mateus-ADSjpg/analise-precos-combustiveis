@@ -59,6 +59,9 @@ def limpar(df):
     )
     df["Cep"] = df["Cep"].str.replace(r"\D", "", regex=True).str.zfill(8)
 
+        # Unidade do GNV veio com duas grafias entre semestres: "m3" e "m³"
+    df["Unidade de Medida"] = df["Unidade de Medida"].str.replace("m3", "m³")
+
     # Data no padrão brasileiro (dia/mês/ano)
     df["Data da Coleta"] = pd.to_datetime(df["Data da Coleta"], format="%d/%m/%Y")
 
