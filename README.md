@@ -2,7 +2,7 @@
 
 Dashboard em Power BI com 3 milhões de preços coletados pela ANP entre janeiro de 2023 e junho de 2026. Os dados passam por um pipeline em Python e PostgreSQL antes de chegar no Power BI.
 
-![Visão geral](imagens/01_visao_geral.png)
+![Demonstração](imagens/demo.gif)
 
 ## O problema
 
